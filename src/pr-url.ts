@@ -9,8 +9,8 @@
  *   - Forgejo (any host other than github.com):
  *     https://<lowercase-dns-host>/<owner>/<repo>/pulls/<n>
  * with <n> a positive number without leading zeros. Anything else - issue URLs,
- * singular/plural route confusion, trailing slash, query/fragment, whitespace,
- * userinfo, ports, encoded separators - is not a PR URL.
+ * `/pulls/` on github.com, trailing slash, query/fragment, whitespace, userinfo,
+ * ports, encoded separators - is not a PR URL.
  */
 
 const HOST_LABEL = "[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?";
